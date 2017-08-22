@@ -1,0 +1,199 @@
+@charset "UTF-8";
+
+article, aside, footer, header, main, nav, section {
+	display: block;
+}
+
+html, body, h1, h2, h3, h4, ul, li, a, p,
+article, aside, footer, header, main, nav, section {
+	padding: 0;
+	margin: 0;
+}
+
+.banner {
+	background-image: url(dankimberleybanner.png);
+	color: white;
+    height: 80px;
+	padding: 10px 20px;
+    text-align: center;
+}
+
+body {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+    background-image: url(newyork.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    vertical-align: middle;
+	font-family: 'Comfortaa', cursive;
+	font-size: 15px;
+}
+
+nav ul {
+	-webkit-font-smoothing:antialiased;
+	/*text-shadow:0 1px 0 #FFF;*/
+    background: orange;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+nav li {
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-family: "Raleway", sans-serif;
+    font-size: 5px;
+    min-width: 25%;
+}
+nav a {
+    background: #000000;
+    color: #ffffff;
+    display: block;
+    font: 15px/50px sans-serif;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 25px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all .25s ease;
+       -moz-transition: all .25s ease;
+        -ms-transition: all .25s ease;
+         -o-transition: all .25s ease;
+            transition: all .25s ease;
+}
+nav .dropdown:after {
+    content: ' ▶';
+}
+nav .dropdown:hover:after{
+	content:'\25bc'
+}
+nav li:hover a {
+    background: orange;
+}
+nav li ul {
+    float: left;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 35px;
+    visibility: hidden;
+    z-index: 1;
+    -webkit-transition: all .25s ease;
+       -moz-transition: all .25s ease;
+        -ms-transition: all .25s ease;
+         -o-transition: all .25s ease;
+            transition: all .25s ease;
+}
+nav li:hover ul {
+    opacity: 1;
+    top: 50px;
+    visibility: visible;
+}
+nav li ul li {
+    float: none;
+    width: 100%;
+}
+nav li ul a:hover {
+    background: #000000;
+}
+
+/* Clearfix */
+
+.cf:after, .cf:before {
+    content:"";
+    display:table;
+}
+.cf:after {
+    clear:both;
+}
+
+#textboxOne {
+    background-image: url(textboxOne.jpg);
+	position: absolute;
+    left: 0px;
+    top: 15px;
+    height: 300px;
+    width: 600px;
+    text-align: center;
+}
+
+#textboxTwo {
+    background-image: url(textboxTwo.jpg);
+    position: absolute;
+    left: 615px;
+    top: 15px;
+    height: 300px;
+    width: 345px;
+    text-align: center;
+}
+
+#textboxThree {
+    background-image: url(textboxThree.jpg);
+    position: absolute;
+    left: 0px;
+    top: 330px;
+    height: 50px;
+    width: 475px;
+    text-align: center;
+}
+
+#textboxFour {
+    background-image: url(textboxFour.jpg);
+    position: absolute;
+    left: 490px;
+    top: 330px;
+    height: 470px;
+    width: 470px;
+    text-align: center;
+}
+
+#textboxFive {
+    background-image: url(textboxFive.jpg);
+    position: absolute;
+    left: 0px;
+    top: 395px;
+    height: 405px;
+    width: 475px;
+    text-align: center;
+}
+
+#textboxSix {
+    background-image: url(textboxFive.jpg);
+    position: absolute;
+    left: 0px;
+    top: 830px;
+    height: 405px;
+    width: 475px;
+    text-align: center;
+}
+
+article {
+	background-color: white;
+	margin-top: 5px;
+	padding: 10px 15px;
+}
+
+main {
+	width: 960px;
+	margin-bottom: 10px;
+    position: relative;
+}
+
+aside {
+	background-color: #bbbbbb;
+	width: 270px;
+	float: right;
+	padding: 20px;
+	margin-top: 10px;
+}
+
+footer {
+	clear:both;
+    text-align: center;
+	background-color: #000000;
+	color: white;
+	padding: 5px 20px;
+}
